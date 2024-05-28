@@ -5,7 +5,7 @@
   tasks:
   - name: Creating a file with content
     copy:
-      dest: "/root"
+      dest: "/root/hello-world.txt"
       content: |
-        line 01
-        line 02
+        hello
+        world
