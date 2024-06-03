@@ -1,8 +1,9 @@
 ---
 
-- hosts: localhost
+- name: Test Ansible Pull
+  hosts: localhost
   become: yes
-  
+
   tasks:
   - name: Creating a file with content
     copy:
