@@ -1,7 +1,8 @@
 ---
 
-- hosts: all
+- hosts: localhost
   become: yes
+  
   tasks:
   - name: Creating a file with content
     copy:
