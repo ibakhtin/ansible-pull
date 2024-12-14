@@ -1,14 +1,14 @@
 ---
-
-- name: Test Ansible Pull
+- name: Main playbook
   hosts: localhost
   connection: local
-  become: yes
+  become: true
 
+  pre_tasks:
+    - name: update repository
+      apt:
+        update_cache: true
+      changed_when: false
+  
   tasks:
-  - name: Creating a file with content
-    copy:
-      dest: "/root/ok.txt"
-      content: |
-        hello
-        world
+    - include: tasks/packages.yml
