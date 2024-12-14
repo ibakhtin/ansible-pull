@@ -1,8 +1,8 @@
-- name: Install packages
+- name: install packages
   apt:
     name:
       - tmux
       - htop
       - micro
-    state: absent
+    state: latest
         
