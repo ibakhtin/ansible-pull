@@ -11,5 +11,4 @@
       changed_when: false
   
   tasks:
-    - name: Included tasks
-      include_tasks: tasks/packages.yml
+    - include_tasks: tasks/packages.yml
