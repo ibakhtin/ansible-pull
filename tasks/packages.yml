@@ -3,5 +3,5 @@
     name:
       - tmux
       - htop
-    state: latest
+    state: absent
         
