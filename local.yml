@@ -1,7 +1,7 @@
 ---
 
 - name: Test Ansible Pull
-  hosts: localhost
+  hosts: all
   become: yes
 
   tasks:
