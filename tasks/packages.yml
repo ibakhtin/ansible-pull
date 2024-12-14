@@ -1,15 +1,7 @@
----
-
-- name: Install package
-  hosts: localhost
-  connection: local
-  become: true
-
-  tasks:
-    - name: Install packages
-      apt:
-        name:
-          - tmux
-          - htop
-        state: latest
+- name: Install packages
+  apt:
+    name:
+      - tmux
+      - htop
+    state: latest
         
