@@ -1,4 +1,5 @@
 ---
+
 - name: ansible-pool playbook
   hosts: localhost
   connection: local
